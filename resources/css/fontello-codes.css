@@ -1,0 +1,4 @@
+
+.icon-play:before { content: '\e800'; } /* '' */
+.icon-loop:before { content: '\e801'; } /* '' */
+.icon-spin3:before { content: '\e832'; } /* '' */

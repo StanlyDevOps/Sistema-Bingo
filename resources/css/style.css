@@ -1,0 +1,465 @@
+body {
+    background-image: url(../img/fondoplaygame.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    zoom: 80%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+table {
+    background-color: #000404;
+    border: 5px solid hsl(303, 100%, 50%);
+    border-spacing: 5px 3px;
+    border-collapse: separate;
+    margin: 0 auto;
+    width: 900px;
+    height: 150px;
+}
+
+td {
+    color: rgb(252, 247, 189);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+th {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    font-size: 14px;
+}
+
+.tabla {
+    margin: 5px;
+    width: 100%;
+}
+
+.bgg1 {
+    background: radial-gradient(
+        circle at 0 0,
+        rgb(252, 177, 177),
+        rgb(255, 0, 0),
+        rgb(20, 0, 0)
+    ); /* Letras BINGO de la Tabla Principal*/
+    border-radius: 50%;
+    font-size: 2em;
+    color: #fffff7;
+    text-shadow: 1px 1px 2px #390000;
+}
+
+.bgg2 {
+    background: radial-gradient(
+        circle at 0 0,
+        rgb(255, 255, 190),
+        rgb(178, 175, 5),
+        rgb(40, 40, 0)
+    ); /* Letras BINGO de la Tabla Principal*/
+    border-radius: 50%;
+    font-size: 2em;
+    color: #fffff7;
+    text-shadow: 1px 1px 2px #262f00;
+}
+
+.bgg3 {
+    background: radial-gradient(
+        circle at 0 0,
+        rgb(255, 255, 255),
+        green,
+        rgb(0, 31, 0)
+    );
+    font-size: 2em;
+    color: #fffff7;
+    text-shadow: 1px 1px 2px #262f00;
+    border-radius: 50%;
+}
+
+.bgg4 {
+    background: radial-gradient(
+        circle at 0 0,
+        rgb(255, 209, 123),
+        orange,
+        rgb(60, 39, 0)
+    ); /* Letras BINGO de la Tabla Principal*/
+    border-radius: 50%;
+    font-size: 2em;
+    color: #fffff7;
+    text-shadow: 1px 1px 2px #262f00;
+}
+
+.bgg5 {
+    border-radius: 50%;
+    font-size: 2em;
+    color: #ffffff;
+    background: radial-gradient(
+        circle at 0 0,
+        rgb(168, 168, 255),
+        blue,
+        rgb(1, 1, 59)
+    );
+}
+/* bototnes######========================================================================= */
+
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* [class*="icon-"] {
+    font-family: 'fontello';
+    font-style: normal;
+    font-size: 3em;
+} */
+
+.btncon {
+    height: 0px;
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.nav li:before {
+    /* content: ""; */
+    display: block;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+}
+
+.nav a:link,
+.nav a:visited {
+    display: block;
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(#f7f7f7),
+        to(#e7e7e7)
+    );
+    background-image: -webkit-linear-gradient(top, #385cfd, #1603a6);
+    background-image: -moz-linear-gradient(top, #0d0d0d, #110f0f);
+    background-image: -ms-linear-gradient(top, #000000, #0d0d0d);
+    background-image: -o-linear-gradient(top, #0c0c0c, #0b0b0b);
+    color: #ffffff;
+    margin: 36px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px #ffffff, inset 0px 2px 3px #fff;
+    border: solid 1px transparent;
+}
+
+.nav a:before {
+    content: "";
+    display: block;
+    background: #080101;
+    border-top: 2px solid #dddddd;
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    bottom: -18px;
+    right: -18px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 48px #efeff3;
+}
+
+.nav a:active {
+    box-shadow: 3px 3px 4px #ffffff inset, 1px 2px 3px #0a050d;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color: #fffdfd;
+    background: #2c0590;
+}
+
+.icon-play {
+    font-size: 3em;
+}
+
+.icon-loop {
+    font-size: 3em;
+}
+
+.icon-spin3 {
+    font-size: 3em;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3px;
+}
+
+.circle-letter {
+    color: #030303;
+    background-image: url(../img/fondobalota.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    width: 80px; /* Ancho y alto iguales para crear un círculo */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    border: 3px solid rgb(1, 30, 255);
+    border-radius: 50%;
+    margin-top: 4em;
+    animation: bounce 1s ease infinite;
+    box-shadow: -2px 2px 20px rgb(0, 0, 0);
+}
+
+.letter {
+    font-size: larger;
+    text-shadow: 2px 2px 6px rgb(5, 1, 15);
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.circle-letter {
+    animation: bounce 1.5s ease-in-out infinite; /* Aumenta la duración a 1.5 segundos y usa ease-in-out para una transición suave */
+}
+
+.circle-letter:nth-child(1) {
+    animation-delay: 0.9s; /* Retrasa la primera letra */
+}
+
+.circle-letter:nth-child(2) {
+    animation-delay: 0.6s; /* Retrasa la segunda letra */
+}
+
+.circle-letter:nth-child(3) {
+    animation-delay: 1.5s; /* Retrasa la tercera letra */
+}
+
+.circle-letter:nth-child(4) {
+    animation-delay: 1.8s; /* Retrasa la cuarta letra */
+}
+
+.circle-letter:nth-child(5) {
+    animation-delay: 2.2s; /* Retrasa la quinta letra */
+}
+/* tabla y listasbtns */
+/* .contenedor{
+ 
+     display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+ } */
+
+/* contenedor de modo de juego y demas ============================================================================================= */
+/* este es el contenedor padre */
+.medio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* pelota */
+.generador {
+    flex: 3;
+    font-size: 23px;
+    font-weight: 700;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#vlgnd {
+    width: 150px;
+    color: white;
+    text-shadow: 2px 2px 5px#080101;
+    height: 150px;
+    display: flex;
+    margin-top: 6em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: rebota 1.6s alternate infinite ease-in;
+}
+
+.shadow {
+    width: 100px;
+    height: 0.5px;
+
+    border-radius: 50%;
+    position: absolute;
+    top: 433px;
+    left: 245px;
+    opacity: 0.3;
+    transform: scale(0.5);
+    animation: sombra 1.6s alternate infinite ease-in;
+}
+
+@keyframes sombra {
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+@keyframes rebota {
+    90% {
+        height: 100px;
+    }
+
+    100% {
+        transform: translateY(200px);
+        height: 83px;
+    }
+}
+
+/* valores genradps========================================================================================= */
+.valores {
+    overflow: hidden;
+    flex: 5;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    clip-path: inset(0 0 0 0 round 30px);
+    box-shadow: 2px 2px 10px white;
+    height: 93px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 8em;
+    border: 0.5px solid white;
+    backdrop-filter: blur(20px);
+}
+
+.valores clip-path {
+    width: 90%;
+    height: 90%;
+    clip-path: inset(0 0 0 0);
+}
+
+.valores div {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 2.5em;
+    color: rgb(242, 242, 242);
+    text-shadow: 2px 2px 5px#080101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: rollLeft 8s ease-in-out forwards;
+}
+
+@keyframes rollLeft {
+    0% {
+        transform: translateX(345px); /* Posición inicial */
+    }
+    100% {
+        transform: translateX(0px); /* Posición final (derecha) */
+    }
+}
+
+.contGM {
+    flex: 3;
+}
+
+.GM {
+    margin-top: 9em;
+    text-align: center;
+    border: 5px solid rgb(1, 90, 34);
+    border-radius: 0.5em;
+    width: 180px;
+    height: 220px;
+    background-color: rgba(0, 255, 94, 0.361);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10em;
+}
+
+.patron {
+    text-align: center;
+    padding-left: 7px;
+    border-spacing: 4px;
+}
+
+.bi {
+    width: 180px;
+    background-color: rgb(1, 90, 34);
+    padding-left: 20px;
+    color: #ffffff;
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btndiv {
+    margin-left: 6.5em;
+    width: 300px;
+    text-align: center;
+}
+
+.btnlimp {
+    margin-top: 10px;
+    width: 150px; /* Boton que Limpia Patrón de Juego */
+    height: 35px;
+    border-radius: 1.5em;
+    background-color: rgb(1, 6, 150);
+    font-weight: 600;
+    color: rgb(255, 255, 254);
+    font-size: 15px;
+    padding: 2px;
+    border: 5px solid rgb(152, 156, 163);
+}
+.btnlimp:hover {
+    background-color: rgb(46, 0, 125);
+    cursor: pointer;
+}
