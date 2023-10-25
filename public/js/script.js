@@ -1,3 +1,4 @@
+console.log("script ready");
 function dividirNumeros() {
     let columnas = [];
     let inicio = 1;

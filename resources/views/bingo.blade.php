@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tablero de Bingo</title>
-    <link rel="stylesheet" href="{{ mix('css/style.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/fontello.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fontello.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -114,7 +114,7 @@
             </nav>
         </div>
     </div>
-    <script src="{{ mix('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
