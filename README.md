@@ -69,5 +69,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 Comandos a ejectuar: 
 - npm install --locale
-- composer upadate
+- composer update
 - php artisan config:cache
