@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthUser;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/', function (){
     return view('login');
+});   
+route::group(['middleware' => ['web']], function(){
+    
+    Route::post('/registrar', [AuthUser::class, 'registrar']);
+    Route::post('/login', [AuthUser::class, 'login']);
 });
-
-Route::post('/registrar', [AuthUser::class, 'registrar']);
-Route::post('/login', [AuthUser::class, 'login']);
 
 Route::get('/bingo', function () {
     return view('bingo');
-});
-Route::middleware(['auth'])->group(function(){
 });
