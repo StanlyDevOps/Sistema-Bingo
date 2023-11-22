@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{{asset('css/login/logstyle.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/login/logstyle.css') }}">
     <script src="{{ asset('js/login/logincard.js') }}"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
-</head>
-<body>
 
-    
+</head>
+
+<body>
+    @if (session('error'))
+        <div class="alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
 
     <div class="container" id="container">
         <div class="circle circle-one"></div>
         <div class="form-container sign-up-container">
-            <form action="/registrar" method="post">
+            <form action="{{ route('registrar') }}" method="post">
                 @csrf
                 <h1 class="colorh">Registrarse</h1>
                 <div class="social-container">
@@ -32,7 +37,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="/login" method="post">
+            <form action="{{ route('login') }}" method="post">
                 @csrf
                 <h1 class="colorh">Iniciar Sesion</h1>
                 <div class="social-container">
@@ -60,16 +65,17 @@
                     <button class="ghost" id="signUp">Registrarse</button>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="circle circle-two"></div>
-        
-        
+
+
     </div>
-    
-        <div class="theme-btn-container"></div>
-        <script src="{{ asset('js/login/loginscript.js') }}"></script>
-   
+
+    <div class="theme-btn-container"></div>
+    <script src="{{ asset('js/login/loginscript.js') }}"></script>
+
 </body>
+
 </html>

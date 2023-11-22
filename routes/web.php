@@ -14,15 +14,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function (){
+Route::get('/', function () {
     return view('login');
-});   
-route::group(['middleware' => ['web']], function(){
-    
-    Route::post('/registrar', [AuthUser::class, 'registrar']);
-    Route::post('/login', [AuthUser::class, 'login']);
 });
 
-Route::get('/bingo', function () {
-    return view('bingo');
-});
+// Route::get('/bingo', function () {
+//     return view('bingo');
+// });
+
+Route::view('/login', 'login')->name('login');
+Route::view('/bingo', 'bingo')->name('bingo');
+Route::post('/registrar', [AuthUser::class, 'registrar'])->name('registrar');
+Route::post('/login', [AuthUser::class, 'login'])->name('login');
+
+
