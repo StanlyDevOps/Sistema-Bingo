@@ -1,73 +1,42 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistema de Bingo
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es un sistema desarrollado en Laravel para gestionar un juego de bingo, que incluye un generador de boletas, un generador de números para las boletas con su respectiva interfaz, y una interfaz de gestión de clientes.
 
-## About Laravel
+## Estructura del Proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+El proyecto está organizado en las siguientes carpetas:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **`app`**: Contiene los archivos de la lógica de la aplicación.
+- **`bootstrap`**: Archivos relacionados con la inicialización de la aplicación.
+- **`config`**: Configuraciones de la aplicación.
+- **`database`**: Archivos relacionados con la base de datos, incluyendo migraciones y semillas.
+- **`lang/en`**: Archivos de idioma en inglés.
+- **`public`**: Archivos públicos accesibles desde el navegador, como los activos de la interfaz de usuario.
+- **`resources`**: Archivos de recursos, como vistas y archivos de activos que requieren compilación.
+- **`routes`**: Archivos de rutas de la aplicación.
+- **`storage`**: Archivos generados por la aplicación, como logs, archivos cargados y sesiones.
+- **`tests`**: Archivos de pruebas unitarias y de integración.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Funcionalidades
 
-## Learning Laravel
+- **Generador de Boletas**: Permite generar boletas de bingo para los jugadores.
+- **Generador de Números para Boletas**: Proporciona una interfaz para generar números aleatorios y asignarlos a las boletas de los jugadores.
+- **Interfaz de Gestión de Clientes**: Permite administrar los clientes, incluyendo su registro, actualización y eliminación.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Requerimientos
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Laravel (versión especificada en composer.json)
+- Servidor web compatible con PHP
+- Base de datos MySQL o compatible
+- Navegador web moderno
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Uso
 
-## Laravel Sponsors
+1. Clona este repositorio en tu máquina local.
+2. Configura el entorno de desarrollo y la base de datos según sea necesario.
+3. Ejecuta las migraciones y las semillas para preparar la base de datos.
+4. Inicia el servidor web y abre la aplicación en tu navegador.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Licencia
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-## Primeros pasos
-
-Comandos a ejectuar: 
-- npm install --locale
-- composer update
-- php artisan config:cache
+Este proyecto está bajo la licencia [MIT](LICENSE.md). Para más información, consulta el archivo LICENSE.md.
