@@ -6,16 +6,16 @@ Este proyecto es un sistema desarrollado en Laravel para gestionar un juego de b
 
 El proyecto está organizado en las siguientes carpetas:
 
-- **`app`**: Contiene los archivos de la lógica de la aplicación.
-- **`bootstrap`**: Archivos relacionados con la inicialización de la aplicación.
-- **`config`**: Configuraciones de la aplicación.
-- **`database`**: Archivos relacionados con la base de datos, incluyendo migraciones y semillas.
-- **`lang/en`**: Archivos de idioma en inglés.
-- **`public`**: Archivos públicos accesibles desde el navegador, como los activos de la interfaz de usuario.
-- **`resources`**: Archivos de recursos, como vistas y archivos de activos que requieren compilación.
-- **`routes`**: Archivos de rutas de la aplicación.
-- **`storage`**: Archivos generados por la aplicación, como logs, archivos cargados y sesiones.
-- **`tests`**: Archivos de pruebas unitarias y de integración.
+- **`app/`**: Contiene los archivos de la lógica de la aplicación.
+- **`bootstrap/`**: Archivos relacionados con la inicialización de la aplicación.
+- **`config/`**: Configuraciones de la aplicación.
+- **`database/`**: Archivos relacionados con la base de datos, incluyendo migraciones y semillas.
+- **`lang/en/`**: Archivos de idioma en inglés.
+- **`public/`**: Archivos públicos accesibles desde el navegador, como los activos de la interfaz de usuario.
+- **`resources/`**: Archivos de recursos, como vistas y archivos de activos que requieren compilación.
+- **`routes/`**: Archivos de rutas de la aplicación.
+- **`storage/`**: Archivos generados por la aplicación, como logs, archivos cargados y sesiones.
+- **`tests/`**: Archivos de pruebas unitarias y de integración.
 
 ## Funcionalidades
 
